@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    <div class="flex flex-col items-center">
+        <!-- Logo SVG -->
+        <img src="assets/geo-generator.png" alt="Geo Generator Logo" class="mb-20 w-80 h-auto">
+        <!-- Adjust width as needed -->
+
+        <!-- Main Container -->
+        <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-purple-300 to-purple-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+            </div>
+            <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+                <div class="max-w-md mx-auto">
+                    <div>
+                        <h1 class="text-2xl font-semibold" style="color:#333333; font-family: 'Segoe UI', sans-serif;">
+                            Find
+                            Locations</h1>
+                        <p class="my-4"> Create five GEO locations for your local SEO strategies</p>
+                    </div>
+                    <div class="divide-y divide-gray-200">
+                        <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                            <form id="location-form" class="space-y-6">
+                                <div class="relative">
+                                    <input type="text" id="latitude-input" placeholder="Enter Latitude"
+                                        class=" my-2 p-2 peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-blue-600 focus:bg-transparent" />
+                                    <label for="latitude-input"
+                                        class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Enter
+                                        Latitude</label>
+                                </div>
+                                <div class="relative">
+                                    <input type="text" id="longitude-input" placeholder="Enter Longitude"
+                                        class="my-2 p-2 peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:border-blue-600 focus:bg-transparent" />
+                                    <label for="longitude-input"
+                                        class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Enter
+                                        Longitude</label>
+                                </div>
+                                <div class="relative">
+                                    <button type="submit"
+                                        class="bg-purple-500 text-white rounded-3xl px-4 py-2 text-sm font-bold">Generate</button>
+                                </div>
+                            </form>
+                            <ul id="result-area"
+                                class="font-semibold space-y-2 p-4 bg-gray-50 border border-gray-300 rounded-lg shadow text-gray-700 text-sm">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+
+</html>
+
+</html>
+
+</html>

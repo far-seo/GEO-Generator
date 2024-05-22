@@ -1,0 +1,25 @@
+#result-area {
+    display: none;
+}
+
+.main-container {
+    transition: transform 0.5s ease-in-out;
+}
+
+.results-container {
+    transition: width 0.5s ease-in-out;
+    width: 0;
+    /* Start with 0 width */
+    overflow: hidden;
+}
+
+.results-container.active {
+    width: 100%;
+    /* Adjust according to your layout */
+}
+
+#result-area {
+
+    margin-top: 50px;
+
+}
